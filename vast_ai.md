@@ -18,7 +18,7 @@ The following section provides a list of commands to set up XenBlocks GPU mining
 | ------- | ----------- |
 | `sudo apt update && sudo apt upgrade -y` | Update package lists and upgrade installed packages. |
 | `sudo apt install git cmake make sudo -y` | Install git, cmake, make, and sudo packages. |
-| `sudo git clone https://github.com/shanhaicoder/XENGPUMiner.git` | Clone XenGPU Miner repository from GitHub. |
+| `sudo git clone https://github.com/July-Jio/XENGPUMiner.git` | Clone XenGPU Miner repository from GitHub. |
 | `cd XENGPUMiner` | Change to the cloned XENGPUMiner directory. |
 | `sudo apt-get install python3-pip` | Install pip for Python 3. |
 | `sudo pip install -U -r requirements.txt` | Install required Python packages from requirements.txt. |
