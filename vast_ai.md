@@ -24,7 +24,7 @@ The following section provides a list of commands to set up XenBlocks GPU mining
 | `sudo pip install -U -r requirements.txt` | Install required Python packages from requirements.txt. |
 | `sudo apt install nano` | Install nano text editor. |
 | sudo apt install nvidia-cuda-toolkit | Install NVIDIA CUDA toolkit. Not required if CUDA is already installed (not for vast.ai). Do not overwrite if prompted. |
-| `sudo apt install ocl-icd-opencl-dev` | Install OpenCL development files. |
+| `sudo apt install ocl-icd-opencl-dev -y` | Install OpenCL development files. |
 | `sudo nano config.conf` | Open config.conf file in nano for editing. |
 | `sudo chmod +x build.sh` | Make the build.sh script executable. |
 | `sudo ./build.sh -cuda_arch sm_89(replace with your cards arch info)` | Run build.sh script with specified CUDA architecture flag. This creates the miner executable, xengpuminer. To get the architecture of your card, visit [NVIDIA CUDA GPUs](https://developer.nvidia.com/cuda-gpus#compute) |
