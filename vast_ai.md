@@ -18,16 +18,12 @@ The following section provides a list of commands to set up XenBlocks GPU mining
 | ------- | ----------- |
 | `sudo apt update && sudo apt upgrade -y` | Update package lists and upgrade installed packages. |
 | `sudo apt install git cmake make sudo -y` | Install git, cmake, make, and sudo packages. |
-| `sudo git clone https://github.com/July-Jio/XENGPUMiner.git` | Clone XenGPU Miner repository from GitHub. |
-| `cd XENGPUMiner` | Change to the cloned XENGPUMiner directory. |
+| `sudo git clone https://github.com/July-Jio/XENGPUMiner.git && cd XENGPUMiner` | Clone XenGPU Miner repository from GitHub. |
 | `sudo apt-get install python3-pip` | Install pip for Python 3. |
 | `sudo pip install -U -r requirements.txt` | Install required Python packages from requirements.txt. |
-| `sudo apt install nano` | Install nano text editor. |
-| sudo apt install nvidia-cuda-toolkit | Install NVIDIA CUDA toolkit. Not required if CUDA is already installed (not for vast.ai). Do not overwrite if prompted. |
 | `sudo apt install ocl-icd-opencl-dev -y` | Install OpenCL development files. |
-| `sudo nano config.conf` | Open config.conf file in nano for editing. |
 | `sudo chmod +x build.sh` | Make the build.sh script executable. |
-| `sudo ./build.sh -cuda_arch sm_89(replace with your cards arch info)` | Run build.sh script with specified CUDA architecture flag. This creates the miner executable, xengpuminer. To get the architecture of your card, visit [NVIDIA CUDA GPUs](https://developer.nvidia.com/cuda-gpus#compute) |
+| `sudo ./build.sh -cuda_arch sm_89` | Run build.sh script with specified CUDA architecture flag. This creates the miner executable, xengpuminer. (replace with your cards arch info) To get the architecture of your card, visit [NVIDIA CUDA GPUs](https://developer.nvidia.com/cuda-gpus#compute) |
 | Setup complete! Run both ./xenminergpu and miner.py | I recommend using the TMUX script below.|
 
 How to Setup TMUX
@@ -35,7 +31,6 @@ How to Setup TMUX
 | Command | Description |
 | ------- | ----------- |
 | `sudo apt install tmux` | Install tmux terminal multiplexer. |
-| `sudo nano tmux.sh` | Open a new or existing file named tmux.sh in nano for editing. |
 | - | **Paste the script below into text editor and save. |(Ctrl+O to write changes, Ctrl+X to exit nano).** |
 | `sudo chmod +x tmux.sh` | Make the tmux.sh script executable. |
 | `sudo ./tmux.sh` | Execute the tmux.sh script. |
